@@ -1,0 +1,33 @@
+
+//Color
+$theme-colors: (
+	"primary":    #364D63,
+ 	"secondary":  #6088AF,
+  	"light":      #F2F9FF,
+  	"dark":       #283949,
+  	"gray": 	  #C7DAEB
+);
+
+$grays: (
+	"100": #FCFEFF,
+	"200": map-get($theme-colors, "light"),
+	"300": #C7DAEB,
+	"400": #C2C7CC,
+	"500": #8FA5B8,
+	"600": #9EACB8,
+	"700": #797D7F,
+	"800": #616466,
+	"900": #494B4C,
+	"1000": #303233,
+	"1100": #181919
+);
+
+$primary-shadow: #1F394C;
+
+// Body
+$body-bg: map-get($grays, "100");
+
+// Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;

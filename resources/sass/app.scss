@@ -1,0 +1,53 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Others
+@import "navbar";
+
+
+.container, .container-fluid{
+	margin-top: 2rem;
+}
+
+.fullheight-spread{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: calc(100vh - 133.2px - 2rem);
+}
+
+form{
+	font-family: sans-serif;
+}
+
+table label{
+	margin: 0;
+}
+
+a:not([href]){
+	cursor: pointer;
+}
+
+a:not([href]):hover{
+	text-decoration: underline !important;
+}
+
+p > a, .underline{
+	text-decoration: underline !important;
+}
+
+.card-deck.v-scroll .card{
+	max-height: calc(100vh - 120px - 11rem);
+	overflow-y: auto;
+}
+
+.card .list-group-item{
+	padding-left: 1.5rem;
+}

@@ -1,0 +1,64 @@
+.navbar.topnav{
+	box-shadow: 0px 2px 2px $primary-shadow;
+	z-index: 2;
+}
+
+.navbar.subnav{
+	z-index: 1;
+}
+
+.navbar h1, .navbar h2{
+	font-size: initial;
+	line-height: initial;
+	margin: 0;
+}
+
+.navbar-brand span, .nav-link, .dropdown-item{
+	color: map-get($grays, "400") !important;
+}
+
+.nav-tabs .nav-link{
+	color: #495057 !important;
+}
+
+.navbar .nav-item{
+	padding: 4px 1rem;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.navbar .nav-item.active .nav-link{
+	border-bottom: 1px solid white;
+}
+
+.navbar .btn-group{
+	font-family: sans-serif;
+}
+
+.subnav, .subnav .nav-link{
+	color: map-get($grays, "100") !important;
+	font-weight: normal;
+}
+
+.subnav .navbar-nav{
+	flex-direction: row;
+}
+
+.subnav h2, .subnav p{
+	line-height: inherit;
+    margin: .5rem 0;
+    padding: 4px 0;
+}
+
+.dropdown-menu{
+	background-color: map-get($theme-colors, "primary");
+	box-shadow: 0px 2px 2px $primary-shadow;
+    border: none;
+    border-radius: 0;
+    left: initial;
+    top: 55px;
+
+    .dropdown-item:hover{
+    	background-color: map-get($theme-colors, "primary");
+    }
+}
